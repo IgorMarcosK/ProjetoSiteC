@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using SalesWebMvc.Models;
+using SalesWebMvc.Models.ViewModels;
 
 namespace SalesWebMvc.Controllers;
 
@@ -14,6 +15,10 @@ public class HomeController : Controller
     }
 
     public IActionResult Index()
+    {
+        return View();
+    }
+    public IActionResult Departments()//novo deletar depois
     {
         return View();
     }
